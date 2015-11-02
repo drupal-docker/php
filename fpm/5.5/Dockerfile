@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:5.5-fpm
 MAINTAINER zaporylie
 
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
