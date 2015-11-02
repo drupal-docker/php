@@ -1,5 +1,6 @@
-FROM php:7-apache
+FROM php:5.6-apache
 MAINTAINER zaporylie
+
 RUN apache2ctl -M
 RUN a2enmod rewrite
 RUN apt-get update && apt-get install -y \
