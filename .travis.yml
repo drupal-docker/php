@@ -1,0 +1,22 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  matrix:
+    - DOCKERFILE="apache/5.4"
+    - DOCKERFILE="apache/5.5"
+    - DOCKERFILE="apache/5.6"
+    - DOCKERFILE="apache/7"
+    - DOCKERFILE="fpm/7"
+
+before_script:
+  - docker version
+
+script:
+  - docker build -t ${DOCKERFILE} ./${DOCKERFILE}
+
+after_script:
+  - docker images
+  - docker ps -a
