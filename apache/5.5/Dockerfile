@@ -8,4 +8,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 
 RUN docker-php-ext-install opcache
 
+COPY ../../conf/opcache-recommended.ini /usr/local/etc/php/conf.d/opcache-recommended.ini
+
 RUN a2enmod rewrite
