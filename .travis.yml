@@ -9,6 +9,9 @@ env:
     - DOCKERFILE="apache/5.5"
     - DOCKERFILE="apache/5.6"
     - DOCKERFILE="apache/7"
+    - DOCKERFILE="fpm/5.4"
+    - DOCKERFILE="fpm/5.5"
+    - DOCKERFILE="fpm/5.6"
     - DOCKERFILE="fpm/7"
 
 before_script:
