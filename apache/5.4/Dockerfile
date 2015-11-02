@@ -1,15 +1,9 @@
 FROM php:5.4-apache
 MAINTAINER zaporylie
 
-RUN apache2ctl -M
+RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
+	&& rm -rf /var/lib/apt/lists/* \
+	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
+	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
+
 RUN a2enmod rewrite
-RUN apt-get update && apt-get install -y \
-        libfreetype6-dev \
-        libjpeg62-turbo-dev \
-        libmcrypt-dev \
-        libpng12-dev
-RUN docker-php-ext-install mysqli \
- && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
- && docker-php-ext-install gd
-RUN docker-php-ext-install bcmath mbstring
-RUN docker-php-ext-install pdo pdo_mysql
