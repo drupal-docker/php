@@ -7,3 +7,6 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
 
 RUN docker-php-ext-install opcache
+
+COPY opcache-recommended.ini /usr/local/etc/php/conf.d/
+
