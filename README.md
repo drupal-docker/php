@@ -1,40 +1,35 @@
 PHP for Drupal
 =============
 
-- Apache
-- PHP
-- extensionsions required by Drupal (mbstring, opcache, pdo_mysql, pdo_pgsql, gd)
+- Apache + mod_php
+- PHP-FPM
 
 # Quickstart:
 
-PHP7 + Apache (mod_php)
-````
-docker run -dP --volume /path/to/drupal:/var/www/html zaporylie/php-drupal:7-apache
-````
-
 PHP5.6 + Apache (mod_php)
 ````
-docker run -dP --volume /path/to/drupal:/var/www/html zaporylie/php-drupal:5.6-apache
+docker run -dP --volume /path/to/drupal:/var/www/html drupal-docker/php:apache
 ````
 
 # Versions (Docker tags):
-- `5.4-apache`, `5.4` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.4/Dockerfile))
-- `5.5-apache`, `5.5` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.5/Dockerfile))
-- `5.6-apache`, `5.6`, `latest` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.6/Dockerfile))
-- `7-apache`, `7` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/7/Dockerfile))
-- `5.4-fpm` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.4/Dockerfile))
-- `5.5-fpm` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.5/Dockerfile))
-- `5.6-fpm` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.6/Dockerfile))
-- `7-fpm` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/7/Dockerfile))
+- `5.4-apache` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.4/Dockerfile))
+- `5.5-apache` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.5/Dockerfile))
+- `5.6-apache`, `5-apache`, `apache`, `latest` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.6/Dockerfile))
+- `7-apache` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/7/Dockerfile))
+- `5.4-fpm`, `5.4` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.4/Dockerfile))
+- `5.5-fpm`, `5.5` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.5/Dockerfile))
+- `5.6-fpm`, `5-fpm`, `5.6`, `5`, `fpm`, `latest`  ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.6/Dockerfile))
+- `7-fpm`, `7` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/7/Dockerfile))
 
 # Roadmap
 - ~~Add Dockerfiles for PHP + Apache (mod_php)~~
 - ~~Add Dockerfiles for PHP-FPM~~
 - ~~Make Apache powered images default ones~~
 - ~~Default version (latest): Apache + PHP5.6~~
-- Create zaporylie/docker-nginx-drupal
-- Create zaporylie/docker-apache-drupal
-- Make FPM _tags_ default (`5.6-fpm`, `5.6`, `latest`)
+- ~~Make FPM _tags_ default (`5.6-fpm`, `5.6`, `latest`)~~
+- Add php-cli (with Drush?)
+- Create drupal-docker/nginx
+- Create drupal-docker/apache
 
 # Status
 Proof of concept
