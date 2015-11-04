@@ -12,14 +12,14 @@ docker run -dP --volume /path/to/drupal:/var/www/html drupal-docker/php:apache
 ````
 
 # Versions (Docker tags):
-- `5.4-apache` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.4/Dockerfile))
-- `5.5-apache` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.5/Dockerfile))
-- `5.6-apache`, `5-apache`, `apache`, `latest` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/5.6/Dockerfile))
-- `7-apache` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/apache/7/Dockerfile))
-- `5.4-fpm`, `5.4` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.4/Dockerfile))
-- `5.5-fpm`, `5.5` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.5/Dockerfile))
-- `5.6-fpm`, `5-fpm`, `5.6`, `5`, `fpm`, `latest`  ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/5.6/Dockerfile))
-- `7-fpm`, `7` ([Dockerfile](https://github.com/zaporylie/docker-php-drupal/blob/master/fpm/7/Dockerfile))
+- `5.4-apache` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/apache/5.4/Dockerfile))
+- `5.5-apache` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/apache/5.5/Dockerfile))
+- `5.6-apache`, `5-apache`, `apache`, `latest` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/apache/5.6/Dockerfile))
+- `7-apache` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/apache/7/Dockerfile))
+- `5.4-fpm`, `5.4` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/fpm/5.4/Dockerfile))
+- `5.5-fpm`, `5.5` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/fpm/5.5/Dockerfile))
+- `5.6-fpm`, `5-fpm`, `5.6`, `5`, `fpm`, `latest`  ([Dockerfile](https://github.com/drupal-docker/php/blob/master/fpm/5.6/Dockerfile))
+- `7-fpm`, `7` ([Dockerfile](https://github.com/drupal-docker/php/blob/master/fpm/7/Dockerfile))
 
 # Roadmap
 - ~~Add Dockerfiles for PHP + Apache (mod_php)~~
