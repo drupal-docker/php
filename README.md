@@ -35,4 +35,4 @@ docker run -dP --volume /path/to/drupal:/var/www/html drupal-docker/php:apache
 Proof of concept
 
 # Credits
-Drupal PHP images where built on the top of official [PHP images](https://hub.docker.com/r/_/php/). Thanks to people from Docker community for official [Drupal image](https://hub.docker.com/r/_/drupal/).
+"PHP for Drupal" images were built on the top of official [PHP images](https://hub.docker.com/r/_/php/). Big kudos to people from Docker community for official [Drupal image](https://hub.docker.com/r/_/drupal/).
