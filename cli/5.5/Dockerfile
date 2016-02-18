@@ -1,5 +1,5 @@
 FROM php:5.5-cli
-MAINTAINER zaporylie
+MAINTAINER drupal-docker
 
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
   && rm -rf /var/lib/apt/lists/* \
@@ -9,3 +9,5 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 RUN docker-php-ext-install opcache
 
 COPY opcache-recommended.ini /usr/local/etc/php/conf.d/
+
+WORKDIR /var/www/html
