@@ -1,4 +1,4 @@
-FROM drupaldocker:5.5-apache
+FROM drupaldocker/php:5.5-apache
 MAINTAINER zaporylie
 
 RUN pecl install xdebug-beta \
