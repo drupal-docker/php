@@ -1,6 +1,8 @@
 FROM php:5.6-fpm
 MAINTAINER zaporylie
 
+VOLUME /var/www/html
+
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
