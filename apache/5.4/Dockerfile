@@ -7,3 +7,5 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
 
 RUN a2enmod rewrite
+
+COPY drupal.ini /usr/local/etc/php/conf.d/
