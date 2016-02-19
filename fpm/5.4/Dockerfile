@@ -1,5 +1,5 @@
 FROM php:5.4-fpm
-MAINTAINER zaporylie
+MAINTAINER drupal-docker
 
 VOLUME /var/www/html
 
