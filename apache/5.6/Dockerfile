@@ -1,5 +1,7 @@
 FROM php:5.6-apache
-MAINTAINER zaporylie
+MAINTAINER drupal-docker
+
+VOLUME /var/www/html
 
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& rm -rf /var/lib/apt/lists/* \
