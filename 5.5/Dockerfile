@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
   && docker-php-ext-install opcache \
   && curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer \
-	&& rm -rf /var/lib/apt/lists/*
+  && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY opcache-recommended.ini drupal.ini /usr/local/etc/php/conf.d/
