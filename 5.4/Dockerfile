@@ -15,3 +15,9 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev sudo
   && rm -rf /var/lib/apt/lists/*
 
 COPY drupal.ini /usr/local/etc/php/conf.d/
+
+# Add Xdebug.
+RUN pecl install xdebug-beta \
+  && docker-php-ext-enable xdebug
+
+COPY xdebug.ini /usr/local/etc/php/conf.d/
