@@ -5,7 +5,7 @@ VOLUME /var/www/html
 WORKDIR /var/www/html
 
 ADD https://github.com/phpredis/phpredis/archive/php7.zip /tmp/php7.zip
-RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev sudo unzip \
+RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev sudo unzip git \
   && unzip /tmp/php7.zip -d /usr/src/php/ext \
   && mv /usr/src/php/ext/phpredis-php7 /usr/src/php/ext/redis \
   && docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
