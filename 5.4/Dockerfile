@@ -7,7 +7,7 @@ WORKDIR /var/www/html
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev sudo git \
   && docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
   && docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip \
-  && pecl install redis \
+  && pecl install redis-2.2.8 \
   && docker-php-ext-enable redis \
   && curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer \
