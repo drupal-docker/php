@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev sudo
   && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
   && rm -rf /var/lib/apt/lists/*
 
-COPY opcache-recommended.ini drupal.ini /usr/local/etc/php/conf.d/
+COPY drupal-opcache.ini drupal.ini /usr/local/etc/php/conf.d/
