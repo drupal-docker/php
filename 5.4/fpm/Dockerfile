@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
   && docker-php-ext-enable redis \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY drupal.ini /usr/local/etc/php/conf.d/
+COPY drupal-*.ini /usr/local/etc/php/conf.d/
