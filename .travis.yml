@@ -17,6 +17,9 @@ env:
     - DOCKERFILE="7.0"
     - DOCKERFILE="7.0/apache"
     - DOCKERFILE="7.0/fpm"
+    - DOCKERFILE="7.1"
+    - DOCKERFILE="7.1/apache"
+    - DOCKERFILE="7.1/fpm"
 
 before_script:
   - docker version
