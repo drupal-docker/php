@@ -21,6 +21,8 @@ Version | Type | Tags | Dockerfile
 7.1 | apache | `7.1-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/apache/Dockerfile)
 7.1 | fpm | `7.1-fpm`, `7.1` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/fpm/Dockerfile)
 
+**Deprecation notice:** drupaldocker/php:5.4 and drupaldocker/php:5.5 EOL date: **December 13, 2016**
+
 # Quickstart:
 
 PHP 5.6 + Apache
