@@ -30,7 +30,7 @@ before_script:
   - docker version
 
 script:
-  - docker build -f ./${DOCKERPATH}/${DOCKERFILE} -t ${DOCKERFILE} ./${DOCKERPATH}
+  - docker build -f ./${DOCKERPATH}/${DOCKERFILE} -t ${DOCKERPATH} ./${DOCKERPATH}
 
 after_script:
   - docker images
