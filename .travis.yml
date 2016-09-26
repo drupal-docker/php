@@ -20,6 +20,12 @@ env:
     - DOCKERFILE="7.1"
     - DOCKERFILE="7.1/apache"
     - DOCKERFILE="7.1/fpm"
+    - DOCKERFILE="5.6-alpine"
+    - DOCKERFILE="5.6-alpine/fpm"
+    - DOCKERFILE="7.0-alpine"
+    - DOCKERFILE="7.0-alpine/fpm"
+    - DOCKERFILE="7.1-alpine"
+    - DOCKERFILE="7.1-alpine/fpm"
 
 before_script:
   - docker version
