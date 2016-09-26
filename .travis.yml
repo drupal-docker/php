@@ -26,6 +26,7 @@ env:
     - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="7.1"
     - DOCKERFILE="Dockerfile-alpine-cli" DOCKERPATH="7.1"
     - DOCKERFILE="Dockerfile-alpine-fpm" DOCKERPATH="7.1"
+
 before_script:
   - docker version
 
