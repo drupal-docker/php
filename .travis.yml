@@ -34,4 +34,4 @@ script:
 
 after_script:
   - docker images
-  - docker run --rm -ti ${DOCKERFILE} php -i
+  - docker run --rm -ti ${DOCKERPATH} php -i
