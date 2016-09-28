@@ -5,33 +5,34 @@ services:
 
 env:
   matrix:
-    - DOCKERFILE="5.4"
-    - DOCKERFILE="5.4/apache"
-    - DOCKERFILE="5.4/fpm"
-    - DOCKERFILE="5.5"
-    - DOCKERFILE="5.5/apache"
-    - DOCKERFILE="5.5/fpm"
-    - DOCKERFILE="5.6"
-    - DOCKERFILE="5.6/apache"
-    - DOCKERFILE="5.6/fpm"
-    - DOCKERFILE="7.0"
-    - DOCKERFILE="7.0/apache"
-    - DOCKERFILE="7.0/fpm"
-    - DOCKERFILE="7.1"
-    - DOCKERFILE="7.1/apache"
-    - DOCKERFILE="7.1/fpm"
-    - DOCKERFILE="5.6-alpine"
-    - DOCKERFILE="5.6-alpine/fpm"
-    - DOCKERFILE="7.0-alpine"
-    - DOCKERFILE="7.0-alpine/fpm"
-    - DOCKERFILE="7.1-alpine"
-    - DOCKERFILE="7.1-alpine/fpm"
+    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="5.4"
+    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="5.4"
+    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="5.4"
+    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="5.5"
+    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="5.5"
+    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="5.5"
+    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="5.6"
+    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="5.6"
+    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="5.6"
+    - DOCKERFILE="Dockerfile-alpine-cli" DOCKERPATH="5.6"
+    - DOCKERFILE="Dockerfile-alpine-fpm" DOCKERPATH="5.6"
+    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="7.0"
+    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="7.0"
+    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="7.0"
+    - DOCKERFILE="Dockerfile-alpine-cli" DOCKERPATH="7.0"
+    - DOCKERFILE="Dockerfile-alpine-fpm" DOCKERPATH="7.0"
+    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="7.1"
+    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="7.1"
+    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="7.1"
+    - DOCKERFILE="Dockerfile-alpine-cli" DOCKERPATH="7.1"
+    - DOCKERFILE="Dockerfile-alpine-fpm" DOCKERPATH="7.1"
 
 before_script:
   - docker version
 
 script:
-  - docker build -t ${DOCKERFILE} ./${DOCKERFILE}
+  - docker build -f ./${DOCKERPATH}/${DOCKERFILE} -t ${DOCKERPATH} ./${DOCKERPATH}
 
 after_script:
   - docker images
+  - docker run --rm -ti ${DOCKERPATH} php -i
