@@ -1,4 +1,4 @@
-PHP for Drupal
+PHP
 =====================
 [![Build Status](https://travis-ci.org/drupal-docker/php.svg?branch=master)](https://travis-ci.org/drupal-docker/php)
 [![Docker Pulls](https://img.shields.io/docker/pulls/drupaldocker/php.svg?maxAge=2592000)](https://hub.docker.com/r/drupaldocker/php)
@@ -28,36 +28,3 @@ Version | Type | Tags | Dockerfile
  |  | `7.1-alpine-fpm`, `7.1-alpine` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-alpine-fpm)
 
 **Deprecation notice:** drupaldocker/php:5.4 and drupaldocker/php:5.5 EOL date: **December 13, 2016**
-
-# Quickstart:
-
-PHP 5.6 + Apache
-```bash
-docker run -dP drupaldocker/php:apache
-```
-
-# Environmental variables
-
-No variables
-
-# Description
-
-> PHP is a server-side scripting language designed for web development, but which can also be used as a general-purpose programming language. PHP can be added to straight HTML or it can be used with a variety of templating engines and web frameworks. PHP code is usually processed by an interpreter, which is either implemented as a native module on the web-server or as a common gateway interface (CGI).
-
-> source: [php](https://hub.docker.com/_/php/)
-
-# Status
-
-Proof of concept
-
-# Contributing
-
-1. Fork the repo
-1. Create your feature branch
-1. Commit your changes
-1. Push to the branch
-1. Create new Pull Request
-1. Wait for result of automate tests
-
-# Credits
-`drupaldocker/php images were built on the top of official [PHP images](https://hub.docker.com/r/_/php/). Big kudos to people from Docker community for official [Drupal image](https://hub.docker.com/r/_/drupal/).
