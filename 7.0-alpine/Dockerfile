@@ -1,0 +1,9 @@
+FROM drupaldocker/php:7.0-alpine-cli
+MAINTAINER drupal-docker
+
+RUN apk add --no-cache --virtual .dd-build-deps $PHPIZE_DEPS \
+ && pecl install xdebug-beta \
+ && docker-php-ext-enable xdebug \
+ && apk del .dd-build-deps
+
+COPY drupal-*.ini /usr/local/etc/php/conf.d/
