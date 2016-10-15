@@ -12,4 +12,14 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev \
 	&& a2enmod rewrite \
 	&& rm -rf /var/lib/apt/lists/*
 
+# Compile and install uploadprogress #
+RUN git clone https://github.com/Jan-E/uploadprogress.git /tmp/php-uploadprogress && \
+        cd /tmp/php-uploadprogress && \
+        phpize && \
+        ./configure --prefix=/usr && \
+        make && \
+        make install && \
+        echo 'extension=uploadprogress.so' > $PHP_INI_DIR/conf.d/uploadprogress.ini && \
+        rm -rf /tmp/*
+
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
