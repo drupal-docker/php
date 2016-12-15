@@ -5,12 +5,6 @@ services:
 
 env:
   matrix:
-    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="5.4"
-    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="5.4"
-    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="5.4"
-    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="5.5"
-    - DOCKERFILE="Dockerfile-apache" DOCKERPATH="5.5"
-    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="5.5"
     - DOCKERFILE="Dockerfile-cli" DOCKERPATH="5.6"
     - DOCKERFILE="Dockerfile-apache" DOCKERPATH="5.6"
     - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="5.6"
