@@ -5,12 +5,6 @@ PHP
 
 Version | Type | Tags | Dockerfile
 --- | --- | --- | ---
-5.4 (deprecated) | cli | `5.4-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.4/Dockerfile-cli)
- | apache | `5.4-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.4/Dockerfile-apache)
- | fpm | `5.4-fpm`, `5.4` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.4/Dockerfile-fpm)
-5.5 (deprecated) | cli | `5.5-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.5/Dockerfile-cli)
- | apache | `5.5-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.5/Dockerfile-apache)
- | fpm | `5.5-fpm`, `5.5` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.5/Dockerfile-fpm)
 5.6 | cli | `5.6-cli`, `5-cli`, `cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-cli)
  |  | `5.6-alpine-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-alpine-cli)
  | apache | `5.6-apache`, `5-apache`, `apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-apache)
@@ -26,5 +20,3 @@ Version | Type | Tags | Dockerfile
  | apache | `7.1-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-apache)
  | fpm | `7.1-fpm`, `7.1` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-fpm)
  |  | `7.1-alpine-fpm`, `7.1-alpine` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-alpine-fpm)
-
-**Deprecation notice:** drupaldocker/php:5.4 and drupaldocker/php:5.5 EOL date: **December 13, 2016**
