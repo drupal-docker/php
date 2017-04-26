@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev pos
    && php -r "unlink('composer-setup.php');" \
    && mv composer.phar /usr/local/bin/composer \
    && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
-   && apk add --no-cache sudo git libpng libjpeg libpq \
+   && apk add --no-cache sudo git libpng libjpeg libpq mysql-client openssh-client rsync \
    && apk del .dd-build-deps
 
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
