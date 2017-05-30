@@ -14,3 +14,4 @@ RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev pos
    && apk del .dd-build-deps
 
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
+COPY xdebug-ini /usr/local/etc/php/conf.d/
