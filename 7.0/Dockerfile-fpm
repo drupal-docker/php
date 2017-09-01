@@ -1,6 +1,6 @@
 
 FROM php:7.0-fpm
-MAINTAINER drupal-docker
+MAINTAINER digitalpulp
 
 VOLUME /var/www/html
 

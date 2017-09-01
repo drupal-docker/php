@@ -1,5 +1,5 @@
 FROM php:7.1-fpm-alpine
-MAINTAINER drupal-docker
+MAINTAINER digitalpulp
 
 VOLUME /var/www/html
 

@@ -1,5 +1,5 @@
 FROM php:7.0-cli
-MAINTAINER drupal-docker
+MAINTAINER digitalpulp
 
 VOLUME /var/www/html
 WORKDIR /var/www/html
