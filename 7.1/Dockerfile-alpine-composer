@@ -1,0 +1,8 @@
+FROM digitalpulp:7.1-alpine-cli
+MAINTAINER digitalpulp
+
+VOLUME /var/www/html
+WORKDIR /var/www/html
+
+COPY composer-setup.php
+RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer && php -r "unlink('composer-setup.php');"
