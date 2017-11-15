@@ -12,6 +12,12 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev libx
   && docker-php-ext-enable redis \
   && curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer \
+  && curl -L -o drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.4.2/drush.phar \
+  && chmod +x drush.phar \
+  && mv drush.phar /usr/local/bin/drush \
+  && curl -L -o drupal.phar https://drupalconsole.com/installer \
+  && chmod +x drupal.phar \
+  && mv drupal.phar /usr/local/bin/drupal \
   && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
   && rm -rf /var/lib/apt/lists/*
 
