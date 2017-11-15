@@ -6,19 +6,10 @@ PHP
 | Version | Type | Tags | Dockerfile |
 | --- | --- | --- | --- |
 | 5.6 | cli | `5.6-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-cli) |
-| |  | `5.6-alpine-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-alpine-cli) |
-| | apache | `5.6-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-apache) |
-| | fpm | `5.6-fpm`, `5.6`, `latest` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-fpm) |
-| |  | `5.6-alpine-fpm` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-alpine-fpm) |
+| | fpm | `5.6-fpm`, `5.6` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-fpm) |
 | 7.0 | cli | `7.0-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-cli) |
-| |  | `7.0-alpine-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-alpine-cli) |
-| | apache | `7.0-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-apache) |
-| | fpm | `7.0-fpm`, `7.0` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-fpm) |
-| |  | `7.0-alpine-fpm` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-alpine-fpm) |
+| | fpm | `7.0-fpm`, `7.0`, `latest` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-fpm) |
 | 7.1 | cli | `7.1-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-cli) |
-| |  | `7.1-alpine-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-alpine-cli) |
-| | apache | `7.1-apache` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-apache) |
 | | fpm | `7.1-fpm`, `7.1` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-fpm) |
-| |  | `7.1-alpine-fpm` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-alpine-fpm) |
 
 Read more: http://www.drupaldocker.org/images/PHP.html
