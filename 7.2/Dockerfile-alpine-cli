@@ -1,4 +1,4 @@
-FROM php:7.2-alpine
+FROM php:7.2-rc-alpine
 MAINTAINER drupal-docker
 
 VOLUME /var/www/html
