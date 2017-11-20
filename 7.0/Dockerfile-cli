@@ -1,5 +1,5 @@
 FROM php:7.0-alpine
-MAINTAINER drupal-docker
+LABEL maintainer=drupal-docker
 
 WORKDIR /var/www/html
 

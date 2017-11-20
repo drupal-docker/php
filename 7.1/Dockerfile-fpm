@@ -1,5 +1,5 @@
 FROM php:7.1-fpm-alpine
-MAINTAINER drupal-docker
+LABEL maintainer=drupal-docker
 
 RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev postgresql-dev libxml2-dev $PHPIZE_DEPS \
    && docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
