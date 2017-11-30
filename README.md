@@ -27,9 +27,4 @@ PHP
 | |  | `7.2-alpine-fpm` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.2/Dockerfile-alpine-fpm) |
 
 
-## Important!
-
-PHP7.2 IS A DEVELOPMENT PREVIEW - DO NOT USE IT IN PRODUCTION!
-
-
 Read more: http://www.drupaldocker.org/images/PHP.html
