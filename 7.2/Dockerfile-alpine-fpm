@@ -1,4 +1,4 @@
-FROM php:7.2-rc-fpm-alpine
+FROM php:7.2-fpm-alpine
 MAINTAINER drupal-docker
 
 VOLUME /var/www/html
