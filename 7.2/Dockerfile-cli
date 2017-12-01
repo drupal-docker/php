@@ -1,0 +1,25 @@
+FROM php:7.2-cli
+MAINTAINER drupal-docker
+
+VOLUME /var/www/html
+WORKDIR /var/www/html
+
+RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libpq-dev libxml2-dev sudo git mysql-client openssh-client rsync \
+  && docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \
+  && docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip \
+  && docker-php-ext-install opcache bcmath soap \
+  && pecl install redis-3.1.1 \
+  && docker-php-ext-enable redis \
+  && curl -sS https://getcomposer.org/installer | php \
+  && mv composer.phar /usr/local/bin/composer \
+  && curl -L -o drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.4.2/drush.phar \
+  && chmod +x drush.phar \
+  && mv drush.phar /usr/local/bin/drush \
+  && curl -L -o drupal.phar https://drupalconsole.com/installer \
+  && chmod +x drupal.phar \
+  && mv drupal.phar /usr/local/bin/drupal \
+  && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
+  && rm -rf /var/lib/apt/lists/*
+
+COPY drupal-*.ini /usr/local/etc/php/conf.d/
+COPY cli/drupal-*.ini /usr/local/etc/php/conf.d/
