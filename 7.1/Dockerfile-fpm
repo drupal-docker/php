@@ -1,7 +1,7 @@
 FROM drupaldocker/php:7.1-fpm
 MAINTAINER drupal-docker
 
-RUN pecl install xdebug-beta \
+RUN pecl install xdebug-2.6.0beta1 \
  && docker-php-ext-enable xdebug
 
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
