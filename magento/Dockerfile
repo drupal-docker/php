@@ -57,5 +57,4 @@ COPY www.conf /etc/php7/php-fpm.d
 
 RUN chown -R www-data:www-data /usr/local/etc/php/conf.d /sock
 
-CMD ["tail", "-f", "/dev/null"]
-# CMD ["php-fpm7", "-F"]
+CMD ["php-fpm7", "-F"]
