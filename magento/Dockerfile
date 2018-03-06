@@ -56,6 +56,6 @@ COPY magento-*.ini /etc/php7/conf.d/
 COPY php-fpm.conf /etc/php7/
 COPY www.conf /etc/php7/php-fpm.d
 
-RUN chown -R www-data:www-data /usr/local/etc/php/conf.d /sock
+RUN chown -R www-data:www-data /sock
 
 CMD ["php-fpm7", "-F"]
