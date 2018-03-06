@@ -53,7 +53,6 @@ RUN    apk update && \
     && mkdir /sock
 
 COPY magento-*.ini /etc/php7/conf.d/
-COPY xdebug.ini /usr/local/etc/php/conf.d/
 COPY php-fpm.conf /etc/php7/
 COPY www.conf /etc/php7/php-fpm.d
 
