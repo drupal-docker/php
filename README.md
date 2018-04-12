@@ -11,5 +11,7 @@ PHP
 | | fpm | `7.0-fpm`, `7.0`, `latest` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-fpm) |
 | 7.1 | cli | `7.1-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-cli) |
 | | fpm | `7.1-fpm`, `7.1` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-fpm) |
+| 7.2 | cli | `7.2-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.2/Dockerfile-cli) |
+| | fpm | `7.2-fpm`, `7.2` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.2/Dockerfile-fpm) |
 
 Read more: http://www.drupaldocker.org/images/PHP.html
