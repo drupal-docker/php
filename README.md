@@ -5,11 +5,13 @@ PHP
 
 | Version | Type | Tags | Dockerfile |
 | --- | --- | --- | --- |
-| 5.6 | cli | `5.6-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-cli) |
-| | fpm | `5.6-fpm`, `5.6` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/5.6/Dockerfile-fpm) |
-| 7.0 | cli | `7.0-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-cli) |
-| | fpm | `7.0-fpm`, `7.0`, `latest` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-fpm) |
-| 7.1 | cli | `7.1-cli` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-cli) |
-| | fpm | `7.1-fpm`, `7.1` | [Dockerfile](https://github.com/drupal-docker/php/blob/master/7.1/Dockerfile-fpm) |
+| 5.6 | cli | `5.6-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/5.6/Dockerfile-cli) |
+| | fpm | `5.6-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/5.6/Dockerfile-fpm) |
+| 7.0 | cli | `7.0-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.0/Dockerfile-cli) |
+| | fpm | `7.0-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.0/Dockerfile-fpm) |
+| 7.1 | cli | `7.1-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.1/Dockerfile-cli) |
+| | fpm | `7.1-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.1/Dockerfile-fpm) |
+| 7.2 | cli | `7.2-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.2/Dockerfile-cli) |
+| | fpm | `7.2-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.2/Dockerfile-fpm) |
 
 Read more: http://www.drupaldocker.org/images/PHP.html
