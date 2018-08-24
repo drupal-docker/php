@@ -11,7 +11,8 @@ RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev pos
    && pecl install redis xdebug \
    && docker-php-ext-enable redis xdebug\
    && apk add --no-cache libpng libjpeg libpq libxml2 \
-   && apk del .dd-build-deps
+   && apk del .dd-build-deps \
+   && apk add imagemagick
 
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
 COPY xdebug.ini /usr/local/etc/php/conf.d/
