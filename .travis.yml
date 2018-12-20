@@ -13,6 +13,8 @@ env:
     - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="7.1"
     - DOCKERFILE="Dockerfile-cli" DOCKERPATH="7.2"
     - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="7.2"
+    - DOCKERFILE="Dockerfile-cli" DOCKERPATH="7.3"
+    - DOCKERFILE="Dockerfile-fpm" DOCKERPATH="7.3"
 
 before_script:
   - docker version
