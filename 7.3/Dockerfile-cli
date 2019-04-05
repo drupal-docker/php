@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev pos
   && chmod +x drupal.phar \
   && mv drupal.phar /usr/local/bin/drupal \
   && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
-  && apk add --no-cache sudo git libpng libjpeg libpq libxml2 mysql-client openssh-client rsync patch \
+  && apk add --no-cache sudo git libpng libjpeg libpq libxml2 mysql-client openssh-client rsync patch libzip-dev \
   && apk del .dd-build-deps
 
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
