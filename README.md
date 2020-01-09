@@ -15,5 +15,7 @@ PHP-dev for Drupal
 | | fpm | `7.2-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/dev-2.x/7.2/Dockerfile-fpm) |
 | 7.3 | cli | `7.3-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/dev-2.x/7.3/Dockerfile-cli) |
 | | fpm | `7.3-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/dev-2.x/7.3/Dockerfile-fpm) |
+| 7.4 | cli | `7.4-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/dev-2.x/7.4/Dockerfile-cli) |
+| | fpm | `7.4-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/dev-2.x/7.4/Dockerfile-fpm) |
 
 Read more: http://www.drupaldocker.org/images/PHP.html
