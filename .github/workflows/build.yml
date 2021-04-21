@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - 2.x
-      - github-actions-followup
   pull_request:
     branches:
       - 2.x
