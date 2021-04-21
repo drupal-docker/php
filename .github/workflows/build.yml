@@ -10,17 +10,18 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    matrix:
-      image_version:
-        - cli
-        - fpm
-      php_version:
-        - 5.6
-        - 7.0
-        - 7.1
-        - 7.2
-        - 7.3
-        - 7.4
+    strategy:
+      matrix:
+        image_version:
+          - cli
+          - fpm
+        php_version:
+          - 5.6
+          - 7.0
+          - 7.1
+          - 7.2
+          - 7.3
+          - 7.4
     steps:
       - name: Checkout
         uses: actions/checkout@v2
