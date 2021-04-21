@@ -3,8 +3,8 @@ MAINTAINER drupal-docker
 
 WORKDIR /var/www/html
 
-RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev postgresql-dev libxml2-dev libzip-dev oniguruma-dev $PHPIZE_DEPS \
-  && docker-php-ext-configure gd --with-jpeg=/usr \
+RUN apk add --no-cache --virtual .dd-build-deps libpng-dev freetype-dev libjpeg-turbo-dev postgresql-dev libxml2-dev libzip-dev oniguruma-dev $PHPIZE_DEPS \
+  && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
   && docker-php-ext-install gd mbstring pdo_mysql pdo_pgsql zip \
   && docker-php-ext-install opcache bcmath soap \
   && pecl install redis-3.1.1 \
@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual .dd-build-deps libpng-dev libjpeg-turbo-dev pos
   && chmod +x drupal.phar \
   && mv drupal.phar /usr/local/bin/drupal \
   && echo "export PATH=~/.composer/vendor/bin:\$PATH" >> ~/.bash_profile \
-  && apk add --no-cache sudo git libpng libjpeg libpq libxml2 mysql-client openssh-client rsync patch libzip-dev \
+  && apk add --no-cache sudo git libpng freetype libjpeg libpq libxml2 mysql-client openssh-client rsync patch libzip \
   && apk del .dd-build-deps
 
 COPY drupal-*.ini /usr/local/etc/php/conf.d/
