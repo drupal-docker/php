@@ -44,12 +44,12 @@ jobs:
           context: ./${{ matrix.php_version }}
           file: ./${{ matrix.php_version }}/Dockerfile-${{ matrix.image_version }}
           push: false
-          tags: drupaldocker/php:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
+          tags: drupaldocker/php-dev:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
       - name: Push
         uses: docker/build-push-action@v2
         with:
           context: ./${{ matrix.php_version }}
           file: ./${{ matrix.php_version }}/Dockerfile-${{ matrix.image_version }}
           push: true
-          tags: drupaldocker/php:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
+          tags: drupaldocker/php-dev:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
         if: ${{ github.event_name == 'push' }}
