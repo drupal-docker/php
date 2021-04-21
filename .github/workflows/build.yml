@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - 2.x
+  pull_request:
+    branches:
+      - 2.x
 
 jobs:
   build:
@@ -35,10 +38,18 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push
+      - name: Build
+        uses: docker/build-push-action@v2
+        with:
+          context: ./${{ matrix.php_version }}
+          file: ./${{ matrix.php_version }}/Dockerfile-${{ matrix.image_version }}
+          push: false
+          tags: drupaldocker/php:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
+      - name: Push
         uses: docker/build-push-action@v2
         with:
           context: ./${{ matrix.php_version }}
           file: ./${{ matrix.php_version }}/Dockerfile-${{ matrix.image_version }}
           push: true
           tags: drupaldocker/php:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
+        if: ${{ github.event_name == 'push' }}
