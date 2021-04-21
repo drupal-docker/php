@@ -38,6 +38,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./${{ matrix.php_version }}
-          file: Dockerfile-${{ matrix.image_version }}
+          file: ./${{ matrix.php_version }}/Dockerfile-${{ matrix.image_version }}
 #          push: true
           tags: drupaldocker/php:${{ matrix.php_version }}-${{ matrix.image_version }}-2.x
