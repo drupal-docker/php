@@ -1,6 +1,6 @@
 PHP
 =====================
-[![Build Status](https://travis-ci.org/drupal-docker/php.svg?branch=master)](https://travis-ci.org/drupal-docker/php)
+[![Build and push to registry](https://github.com/drupal-docker/php/actions/workflows/build.yml/badge.svg)](https://github.com/drupal-docker/php/actions/workflows/build.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/drupaldocker/php.svg?maxAge=2592000)](https://hub.docker.com/r/drupaldocker/php)
 
 | Version | Type | Tags | Dockerfile |
@@ -17,5 +17,5 @@ PHP
 | | fpm | `7.3-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.3/Dockerfile-fpm) |
 | 7.4 | cli | `7.4-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.4/Dockerfile-cli) |
 | | fpm | `7.4-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/7.4/Dockerfile-fpm) |
-
-Read more: http://www.drupaldocker.org/images/PHP.html
+| 8.0 | cli | `8.0-cli-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/8.0/Dockerfile-cli) |
+| | fpm | `8.0-fpm-2.x` | [Dockerfile](https://github.com/drupal-docker/php/blob/2.x/8.0/Dockerfile-fpm) |
