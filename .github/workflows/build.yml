@@ -4,10 +4,10 @@ on:
     - cron: '0 6 * * *'
   push:
     branches:
-      - 2.x
+      - '2.x'
   pull_request:
     branches:
-      - 2.x
+      - '2.x'
 
 jobs:
   build:
