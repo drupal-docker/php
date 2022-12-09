@@ -1,4 +1,4 @@
-FROM php:8.2-rc-fpm-alpine
+FROM php:8.2-fpm-alpine
 MAINTAINER drupal-docker
 
 RUN apk add --no-cache --virtual .dd-build-deps libpng-dev freetype-dev libjpeg-turbo-dev postgresql-dev libxml2-dev libzip-dev oniguruma-dev $PHPIZE_DEPS \
