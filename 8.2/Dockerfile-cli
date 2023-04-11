@@ -1,4 +1,4 @@
-FROM drupaldocker/php:8.0-cli-2.x
+FROM drupaldocker/php:8.2-cli-2.x
 MAINTAINER drupal-docker
 
 RUN apk add --no-cache --virtual .dd-build-deps linux-headers $PHPIZE_DEPS \
